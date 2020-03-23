@@ -2,6 +2,13 @@
 
 @section('content')
 
+    <div class="center jumbotron">
+        <div class="text-center">
+            <h1>Welcome to the Tasklists</h1>
+            {!! link_to_route('signup.get', 'Sign up now!', [], ['class' => 'btn btn-lg btn-primary']) !!}
+        </div>
+    </div>
+<!--
     <h1>タスク一覧</h1>
 
     @if (count($tasks) > 0)
@@ -29,5 +36,5 @@
     
     {!! link_to_route('tasks.create','新規タスクの登録',[],['class' => 'btn btn-primary']) !!}
 
-
+-->
 @endsection
